@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button menuToggle ion-button icon-only>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Code-Up Deliveries</ion-title>
+  </ion-navbar>
+  <ion-toolbar color="secondary">
+    <ion-title>My Deliveries</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <p>You currently have nothing out for delivery :(</p>
+  <p>You can view items you've had delivered from the past deliveries page.</p>
+
+  <button ion-button full (click)="goToPastDeliveries()">View Past Deliveries</button>
+
+</ion-content>
