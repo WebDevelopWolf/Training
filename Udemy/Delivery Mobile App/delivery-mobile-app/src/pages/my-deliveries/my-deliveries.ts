@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { PastDeliveriesPage } from '../past-deliveries/past-deliveries';
+import { DeliveryDetailsPage } from '../delivery-details/delivery-details';
 
 @Component({
   selector: 'page-my-deliveries',
@@ -12,11 +13,15 @@ export class MyDeliveriesPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MyDeliveriesPage');
+    
   }
 
   goToPastDeliveries() {
     this.nav.push(PastDeliveriesPage);
+  }
+
+  goToDelivery() {
+    this.nav.push(DeliveryDetailsPage);
   }
 
 }

@@ -13,4 +13,86 @@
 
 <ion-content padding>
 
+    <ion-list>
+      <ion-item>
+        <ion-label>When?</ion-label>
+        <ion-select [(ngModel)]="gaming">
+          <ion-option value="1">This Month</ion-option>
+          <ion-option value="2">Last 3 Months</ion-option>
+          <ion-option value="6">Last 6 Months</ion-option>
+          <ion-option value="12">Last 12 Months</ion-option>
+          <ion-option value="0">From Start</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <h3>This Month</h3>
+  
+    <ion-list>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/avatar-finn.png">
+        </ion-avatar>
+        <h2>Finn - Amazon</h2>
+        <h3>Order No. 12345</h3>
+        <p>Estimated Arrival 15:00</p>
+      </ion-item>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/avatar-simon.png">
+        </ion-avatar>
+        <h2>Simon - Tesco</h2>
+        <h3>Order No. TS257</h3>
+        <p>Estimated Arrival 18:00</p>
+      </ion-item>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/avatar-carole.png">
+        </ion-avatar>
+        <h2>Carole - Waterstones</h2>
+        <h3>Order No. 521487</h3>
+        <p>Estimated Arrival 09:00</p>
+      </ion-item>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/avatar-sean.png">
+        </ion-avatar>
+        <h2>Sean - Very</h2>
+        <h3>Order No. 051218-54</h3>
+        <p>Estimated Arrival 14:35</p>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img src="assets/avatar-carole.png">
+          </ion-avatar>
+          <h2>Carole - Waterstones</h2>
+          <h3>Order No. 521487</h3>
+          <p>Estimated Arrival 09:00</p>
+        </ion-item>
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="assets/avatar-sean.png">
+          </ion-avatar>
+          <h2>Sean - Very</h2>
+          <h3>Order No. 051218-54</h3>
+          <p>Estimated Arrival 14:35</p>
+        </ion-item>
+        <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/avatar-finn.png">
+            </ion-avatar>
+            <h2>Finn - Amazon</h2>
+            <h3>Order No. 12345</h3>
+            <p>Estimated Arrival 15:00</p>
+          </ion-item>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/avatar-simon.png">
+            </ion-avatar>
+            <h2>Simon - Tesco</h2>
+            <h3>Order No. TS257</h3>
+            <p>Estimated Arrival 18:00</p>
+          </ion-item>
+    </ion-list>
+
 </ion-content>

@@ -13,8 +13,47 @@
 
 <ion-content padding>
 
-  <p>You currently have nothing out for delivery :(</p>
-  <p>You can view items you've had delivered from the past deliveries page.</p>
+  <h3>Today</h3>
+
+  <ion-list>
+    <ion-item (click)="goToDelivery()">
+      <ion-avatar item-start>
+        <img src="assets/avatar-finn.png">
+      </ion-avatar>
+      <h2>Finn - Amazon</h2>
+      <h3>Order No. 12345</h3>
+      <p>Estimated Arrival 15:00</p>
+    </ion-item>
+    <ion-item (click)="goToDelivery()">
+      <ion-avatar item-start>
+        <img src="assets/avatar-simon.png">
+      </ion-avatar>
+      <h2>Simon - Tesco</h2>
+      <h3>Order No. TS257</h3>
+      <p>Estimated Arrival 18:00</p>
+    </ion-item>
+  </ion-list>
+
+  <h3>Tomorrow</h3>
+
+  <ion-list>
+    <ion-item (click)="goToDelivery()">
+      <ion-avatar item-start>
+        <img src="assets/avatar-carole.png">
+      </ion-avatar>
+      <h2>Carole - Waterstones</h2>
+      <h3>Order No. 521487</h3>
+      <p>Estimated Arrival 09:00</p>
+    </ion-item>
+    <ion-item (click)="goToDelivery()">
+      <ion-avatar item-start>
+        <img src="assets/avatar-sean.png">
+      </ion-avatar>
+      <h2>Sean - Very</h2>
+      <h3>Order No. 051218-54</h3>
+      <p>Estimated Arrival 14:35</p>
+    </ion-item>
+  </ion-list>
 
   <button ion-button full (click)="goToPastDeliveries()">View Past Deliveries</button>
 
